@@ -55,31 +55,6 @@ Client.on("guildMemberRemove", member => {
 
 
 
-Client.on("ready", async () => {
-    let servers = await client.guilds.cache.size
-    let servercount = await clientguilds.cache.reduce((a,b) => a+b.memberCount, 0)
-
-    const activities = [
-        `?help | ${servers} servers`,
-        `Invite moi maintenant! | Watching ${servercount} members`
-    ]
-
-    setInterval(()=>{
-        const stauts = activies[Math.floor(Math.random()*activities.length)]
-        client.user.setPresence({ activities : [{name: `${status}` }] })
-
-    }, 5000) 
-
-})
-
-
-
-
-
-
-
-
-
 
 
 
