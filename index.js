@@ -186,4 +186,5 @@ Client.on("messageCreate", message => {
     }    
 });
 
-console.log(process.env.token)
+console.log(process.env.TOKEN);
+Client.login(process.env.TOKEN);
