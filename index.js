@@ -54,13 +54,6 @@ Client.on("guildMemberRemove", member => {
 });
 
 
-
-
-
-
-
-
-
 const prefix = "<";
 
 Client.on("messageCreate", message => {
