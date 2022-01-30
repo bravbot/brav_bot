@@ -10,14 +10,6 @@ const Client = new Discord.Client({
 
 
 
-bot.on("ready", async () => {
-    bot.user.setStatus("dnd")
-});
-
-
-
-const Canvas = require("canvas");
-
 Client.on("ready", () => {
     console.log("bot opérationnel");
 }),
