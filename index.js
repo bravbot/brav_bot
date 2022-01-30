@@ -16,8 +16,8 @@ Client.on("ready", () => {
 
 Client.on("guildMemberAdd", async member => {
     console.log("Un membre est arrivé.");  
-    Client.channels.cache.get("936836550472380486").send("<@" + member.id + "> est arrivé.");  // id du salon ou on veut le message
-    member.roles.add("936866647589937153");       // id rôle qu'on veut add à l'arrivé
+    Client.channels.cache.get("937381312636014623").send("<@" + member.id + "> est arrivé.");  // id du salon ou on veut le message
+    member.roles.add("746829955257597962");       // id rôle qu'on veut add à l'arrivé
 
     var canvas = Canvas.createCanvas(1024, 500);
 
@@ -45,12 +45,12 @@ Client.on("guildMemberAdd", async member => {
 
     var attachment = new Discord.MessageAttachment(canvas.toBuffer(), "welcome.png");
 
-    Client.channels.cache.get("936836550472380486").send({files: [attachment]});     // id du salon ou on veut le message
+    Client.channels.cache.get("937381312636014623").send({files: [attachment]});     // id du salon ou on veut le message
 });
 
 Client.on("guildMemberRemove", member => {
     console.log("Un membre à quitté le serveur.");
-    Client.channels.cache.get("936836550472380486").send("<@" + member.id + "> à quitté.");    // id du salon ou on veut le message
+    Client.channels.cache.get("937381312636014623").send("<@" + member.id + "> à quitté.");    // id du salon ou on veut le message
 });
 
 const prefix = "<";
