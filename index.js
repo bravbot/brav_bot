@@ -53,6 +53,16 @@ Client.on("guildMemberRemove", member => {
     Client.channels.cache.get("937381312636014623").send("<@" + member.id + "> à quitté.");    // id du salon ou on veut le message
 });
 
+bot.on("ready"), async () =>{
+    bot.user.setStatus("dnd")
+}
+
+
+
+
+
+
+
 
 const prefix = "<";
 
