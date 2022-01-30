@@ -201,4 +201,4 @@ Client.on("messageCreate", message => {
 
 
 
-Client.login(process.env.TOKEN);      //token à ne pas montrer
+client.login(process.env.TOKEN);      //token à ne pas montrer
