@@ -128,7 +128,7 @@ Client.on("messageCreate", message => {
                 message.channel.send({ embeds: [embed]});
             }
             else {
-                mention.roles.add("937084214594121758");   // role mute id
+                mention.roles.add("937431094100373555");   // role mute id
             const embed = new Discord.MessageEmbed()
                 .setColor("#FF8F00")
                 .setDescription(mention.displayName + " à été mute")
@@ -146,7 +146,7 @@ Client.on("messageCreate", message => {
                 message.reply("Membre non ou mal mentionné.");
             }
             else {
-                mention.roles.remove("937084214594121758");   //role mute id
+                mention.roles.remove("937431094100373555");   //role mute id
                 message.channel.send(mention.displayName + " à été unmute. **C'est bon on t'entends !**");
             }
         }
@@ -161,10 +161,10 @@ Client.on("messageCreate", message => {
             else {
                 let args = message.content.split(" ");
 
-                mention.roles.add("937084214594121758");        //role mute id
+                mention.roles.add("937431094100373555");        //role mute id
                 message.channel.send(mention.displayName + "à été muté temporairement. Tu pourras bientôt parler");
                 setTimeout(function() {
-                    mention.roles.remove("937084214594121758");    //rôle mute id
+                    mention.roles.remove("937431094100373555");    //rôle mute id
                     message.channel.send(mention.displayName + " tu peux désormais parler.");
                 }, args[2] * 1000);
             }
