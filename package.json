@@ -7,3 +7,5 @@
     "start": "node index.js"
   }
 }
+
+"engines": { "node": "17.3.0" }
