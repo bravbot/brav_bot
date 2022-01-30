@@ -55,7 +55,7 @@ Client.on("guildMemberRemove", member => {
 
 
 
-client.on("ready", async () => {
+Client.on("ready", async () => {
     let servers = await client.guilds.cache.size
     let servercount = await clientguilds.cache.reduce((a,b) => a+b.memberCount, 0)
 
