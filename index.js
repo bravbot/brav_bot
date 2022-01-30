@@ -185,20 +185,4 @@ Client.on("messageCreate", message => {
     }    
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.login(process.env.TOKEN);      //token à ne pas montrer
