@@ -17,6 +17,7 @@ Client.on("ready", () => {
 Client.on("guildMemberAdd", async member => {
     console.log("Un membre est arrivé.");  
     Client.channels.cache.get("961554284422520872").send("<@" + member.id + "> est arrivé.");  // id du salon ou on veut le message
+    member.roles.add("746829955257597962");       // id rôle qu'on veut add à l'arrivé
 
     var canvas = Canvas.createCanvas(1024, 500);
 
